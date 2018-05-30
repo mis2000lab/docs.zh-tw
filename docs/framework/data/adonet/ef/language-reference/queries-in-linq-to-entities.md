@@ -13,7 +13,7 @@ ms.lasthandoff: 05/03/2018
   
  LINQ 查詢作業由三個動作構成：取得資料來源、建立查詢和執行查詢。  
   
- 實作 <xref:System.Collections.Generic.IEnumerable%601> 泛型介面或 <xref:System.Linq.IQueryable%601> 泛型介面的資料來源可以透過 LINQ 進行查詢。 泛型執行個體<xref:System.Data.Objects.ObjectQuery%601>類別，實作泛型<xref:System.Linq.IQueryable%601>介面中，做為資料來源[!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)]查詢。 <xref:System.Data.Objects.ObjectQuery%601> 泛型類別表示傳回零個或多個具型別物件之集合的查詢。 您也可以讓編譯器推斷實體類型，使用 C# 關鍵字`var`（在 Visual Basic 中變暗）。  
+ 實作 <xref:System.Collections.Generic.IEnumerable%601> 泛型介面或 <xref:System.Linq.IQueryable%601> 泛型介面的資料來源可以透過 LINQ 進行查詢。 泛型執行個體<xref:System.Data.Objects.ObjectQuery%601>類別，實作泛型<xref:System.Linq.IQueryable%601>介面中，做為資料來源[!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)]查詢。 <xref:System.Data.Objects.ObjectQuery%601> 泛型類別表示傳回零個或多個具型別物件之集合的查詢。 您也可以讓編譯器推斷實體類型，使用 C# 關鍵字`var`（在 Visual Basic 中寫成 Dim）。  
   
  在此查詢中，您可以精確地指定想要從資料來源中擷取的資訊。 此外，查詢也可以指定該項資訊傳回之前應該如何排序、分組和成形。 在 LINQ 中，查詢會儲存在變數內。 如果查詢傳回一連串值，查詢變數本身必須是可查詢型別。 這個查詢變數不會採取任何動作，也不會傳回任何資料。它只會儲存查詢資訊。 在您建立查詢之後，必須執行該查詢以便擷取任何資料。  
   
